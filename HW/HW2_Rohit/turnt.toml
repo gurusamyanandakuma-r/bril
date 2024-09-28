@@ -1,0 +1,7 @@
+[envs.dce]
+default = false
+command = "bril2json < {filename} | python3 dce.py | bril2txt"
+
+
+[envs.lvn]
+command = "bril2json < {filename} | python3 lvn.py | bril2txt"
