@@ -1,0 +1,16 @@
+[envs.LIVENESS]
+command = "bril2json < {filename} | python3 dfa.py LIVENESS"
+output."LIVENESS.out" = "-"
+
+[envs.VERYBUSY]
+command = "bril2json < {filename} | python3 dfa.py VERYBUSY"
+output."VERYBUSY.out" = "-"
+
+[envs.REACHING]
+command = "bril2json < {filename} | python3 dfa.py REACHING"
+output."REACHING.out" = "-"
+
+[envs.AVAILABLE]
+command = "bril2json < {filename} | python3 dfa.py AVAILABLE"
+output."AVAILABLE.out" = "-"
+

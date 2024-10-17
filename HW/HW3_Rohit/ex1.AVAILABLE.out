@@ -1,0 +1,3 @@
+BLOCK1:
+  IN:  NULL
+  OUT: ('div', ('divident', 'divisor')), ('mul', ('quotient', 'divisor')), ('sub', ('divident', 'product'))

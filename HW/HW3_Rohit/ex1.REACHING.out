@@ -1,0 +1,3 @@
+BLOCK1:
+  IN:  NULL
+  OUT: ('divident', 'BLOCK1'), ('divisor', 'BLOCK1'), ('product', 'BLOCK1'), ('quotient', 'BLOCK1'), ('remainder', 'BLOCK1')

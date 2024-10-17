@@ -1,0 +1,15 @@
+BLOCK1:
+  IN:  NULL
+  OUT: ('x', 'BLOCK1'), ('y', 'BLOCK1')
+header:
+  IN:  ('x', 'BLOCK1'), ('y', 'BLOCK1')
+  OUT: ('cond', 'header'), ('x', 'BLOCK1'), ('y', 'BLOCK1')
+then:
+  IN:  ('cond', 'header'), ('x', 'BLOCK1'), ('y', 'BLOCK1')
+  OUT: ('cond', 'header'), ('result', 'then'), ('x', 'BLOCK1'), ('y', 'BLOCK1')
+else:
+  IN:  ('cond', 'header'), ('x', 'BLOCK1'), ('y', 'BLOCK1')
+  OUT: ('cond', 'header'), ('result', 'else'), ('x', 'BLOCK1'), ('y', 'BLOCK1')
+end:
+  IN:  ('cond', 'header'), ('result', 'else'), ('result', 'then'), ('x', 'BLOCK1'), ('y', 'BLOCK1')
+  OUT: ('cond', 'header'), ('result', 'else'), ('result', 'then'), ('x', 'BLOCK1'), ('y', 'BLOCK1')

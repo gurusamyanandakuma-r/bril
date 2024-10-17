@@ -1,0 +1,15 @@
+BLOCK1:
+  IN:  NULL
+  OUT: x, y
+header:
+  IN:  x, y
+  OUT: x, y
+then:
+  IN:  x, y
+  OUT: result
+else:
+  IN:  x, y
+  OUT: result
+end:
+  IN:  result
+  OUT: NULL

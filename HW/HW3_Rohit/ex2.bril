@@ -1,0 +1,19 @@
+@main {
+  x: int = const 3;
+  y: int = const 4;
+  
+.header:
+    cond: bool = lt x y;   # Check if x < y
+    br cond .then .else;   # Branch based on condition
+
+.then:
+    result: int = add x y;  # result = x + y
+    jmp .end;
+
+.else:
+    result: int = sub x y;  # result = x - y
+    jmp .end;
+
+.end:
+    print result;           # Print the result
+}

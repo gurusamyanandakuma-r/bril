@@ -1,0 +1,15 @@
+BLOCK1:
+  IN:  NULL
+  OUT: NULL
+header:
+  IN:  NULL
+  OUT: ('lt', ('x', 'y'))
+then:
+  IN:  ('lt', ('x', 'y'))
+  OUT: ('add', ('x', 'y')), ('lt', ('x', 'y'))
+else:
+  IN:  ('lt', ('x', 'y'))
+  OUT: ('lt', ('x', 'y')), ('sub', ('x', 'y'))
+end:
+  IN:  ('lt', ('x', 'y'))
+  OUT: ('lt', ('x', 'y'))

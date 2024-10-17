@@ -1,0 +1,11 @@
+@main {
+
+    divisor: int = const 7;
+    divident: int = const 42;
+    quotient: int = div divident divisor;
+    product: int = mul quotient divisor;
+    remainder: int = sub divident product;  
+
+    print remainder; 
+
+}
